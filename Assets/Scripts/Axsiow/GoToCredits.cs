@@ -7,13 +7,11 @@ using UnityEngine.UI;
 public class GoToCredits : MonoBehaviour{
 
     // OK BOOMER
-    void Start ()
-    {
+    void Start () {
         GetComponent<Button>().onClick.AddListener(Back);
     }
 
-    private void Back ()
-    {
+    private void Back () {
         Canvas[] canvases = Resources.FindObjectsOfTypeAll<Canvas>();
 
         GameObject creditsCanvas = canvases[1].gameObject;
