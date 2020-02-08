@@ -15,6 +15,15 @@ ModelImporter:
   - first:
       74: -852473736226892595
     second: Armature|Slidding
+  - first:
+      74: 3220853101679333235
+    second: Armature|JulOvni
+  - first:
+      74: 8305578830406990247
+    second: Armature|PenguinDab
+  - first:
+      74: 3098417940909864311
+    second: Armature|PenguinWaiting
   externalObjects: {}
   materials:
     materialImportMode: 1
