@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogRestartTrigger : MonoBehaviour
 {
     public void TriggerDialogue()
     {
-        FindObjectOfType<MessageManager>().RestartGame();
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
