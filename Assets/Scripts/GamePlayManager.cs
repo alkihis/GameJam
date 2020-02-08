@@ -21,13 +21,15 @@ public class GamePlayManager : MonoBehaviour
             IntroCanvas.SetActive(false);
             // Start game here
             messages.BeginQuestions();
+            //StartPaperFall();
         });
 
-
+        messages.LooseEvent += StartPaperFall;
     }
 
     public void StartCameraPan()
     {
+        Debug.Log("Pan camera");
         Camera.main.gameObject.GetComponent<Animator>().SetTrigger("PanTrigger");
         // Wait for it to finish ... ?
     }
