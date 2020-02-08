@@ -8,6 +8,7 @@ public class MessageManager : MonoBehaviour
     public MessageBoxFax messageBoxFax;
     public Element currentElement;
     private readonly HashSet<int> usedQuestions = new HashSet<int>();
+    public PenguinManager penguinManager;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,22 @@ public class MessageManager : MonoBehaviour
         currentElement = e;
     }
 
-    
+    private void SetElementRestart(bool has_lost = true)
+    {
+        messageBoxFax.buttonRestart.gameObject.SetActive(true);
+        messageBoxFax.answerOne.gameObject.SetActive(false);
+        messageBoxFax.answerTwo.gameObject.SetActive(false);
+        messageBoxFax.buttonNext.gameObject.SetActive(false);
+
+        messageBoxFax.personnageName.text = has_lost ?
+            "Perdu :(" :
+            "Bravo !";
+        messageBoxFax.messageText.text = has_lost ?
+            "Vous avez perdu toutes vos vies. Recommencer ?" :
+            "Il ne reste plus aucune question. Vous avez réussi à garder toutes vos vies !";
+    }
+
+
     public void StartNextQuestion()
     {
         // Select a random element
@@ -57,6 +73,7 @@ public class MessageManager : MonoBehaviour
         {
             // Questions are over !
             Debug.Log("No more questions available !");
+            SetElementRestart(false);
         }
         else
         {
@@ -100,5 +117,11 @@ public class MessageManager : MonoBehaviour
         {
             SetElementNext(answer.message);
         }
+    }
+
+    public void RestartGame()
+    {
+        usedQuestions.Clear();
+        Start();
     }
 }
