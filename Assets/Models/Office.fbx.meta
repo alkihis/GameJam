@@ -20,6 +20,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 099405a085391f1439a453fb6180b2a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Office
     second: {fileID: 2100000, guid: 5fd8a07c1a9b70840928fe4a75492cd8, type: 2}
   materials:

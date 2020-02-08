@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifeManager : MonoBehaviour
 {
     static readonly int START_LIFE = 3;
-    protected EventManager eventManager;
+    public EventManager eventManager;
     public int life = START_LIFE;
 
     /// <summary>
