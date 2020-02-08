@@ -1104,6 +1104,7 @@ MonoBehaviour:
       text: 
       answers: []
   penguinManager: {fileID: 200246955}
+  lifeManager: {fileID: 2131910441}
 --- !u!4 &873003904
 Transform:
   m_ObjectHideFlags: 0

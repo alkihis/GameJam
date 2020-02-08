@@ -9,6 +9,7 @@ public class MessageManager : MonoBehaviour
     public Element currentElement;
     private readonly HashSet<int> usedQuestions = new HashSet<int>();
     public PenguinManager penguinManager;
+    public LifeManager lifeManager;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +70,13 @@ public class MessageManager : MonoBehaviour
         // Select a random element
         var json = Dialog.dialog;
 
+        // Le joueur a perdu
+        if (lifeManager.life == 0)
+        {
+            SetElementRestart(true);
+            return;
+        }
+
         if (usedQuestions.Count == json.elements.Length)
         {
             // Questions are over !
@@ -115,6 +123,14 @@ public class MessageManager : MonoBehaviour
         }
         else
         {
+            // On perd une vie
+            Debug.Log(answer.tensionLoss);
+            if (answer.tensionLoss < 0)
+            {
+                Debug.Log("Dimuntion");
+                lifeManager.SalutMonPote();
+            }
+
             SetElementNext(answer.message);
         }
     }
