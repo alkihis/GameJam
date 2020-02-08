@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class MessageManager : MonoBehaviour
 {
@@ -220,6 +221,6 @@ public class MessageManager : MonoBehaviour
     {
         usedQuestions.Clear();
         lifeManager.Restart();
-        //Start();
+        SceneManager.LoadScene("MainMenu");
     }
 }
