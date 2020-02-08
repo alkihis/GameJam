@@ -40,6 +40,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: LogoPengCorp
+    second: {fileID: 2100000, guid: 84966884ec94e0847a420e63d739911e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Office
     second: {fileID: 2100000, guid: 5fd8a07c1a9b70840928fe4a75492cd8, type: 2}
   - first:
