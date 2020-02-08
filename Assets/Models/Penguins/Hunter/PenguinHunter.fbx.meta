@@ -18,6 +18,15 @@ ModelImporter:
   - first:
       74: -2133482262527725095
     second: Armature|Movment
+  - first:
+      74: -3905797685132134103
+    second: Armature|Hunter_Spe
+  - first:
+      74: -2339461813198769303
+    second: Armature|HunterAngryAnim
+  - first:
+      74: 3459422840632541721
+    second: Armature|HunterMenu
   externalObjects: {}
   materials:
     materialImportMode: 1
