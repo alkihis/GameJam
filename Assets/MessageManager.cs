@@ -29,10 +29,6 @@ public class MessageManager : MonoBehaviour
 
         SetElementQuestion(q1);
 
-        penguinManager.SelectPenguin("");
-
-        penguinManager.Show();
-
         ShowDialog();
     }
 
@@ -104,6 +100,9 @@ public class MessageManager : MonoBehaviour
 
     private void SetElementQuestion(Element e)
     {
+        penguinManager.SelectPenguin(e.penguin);
+        penguinManager.Show();
+
         messageBoxFax.buttonRestart.gameObject.SetActive(false);
         SetActiveAnswers(true);
         messageBoxFax.buttonNext.gameObject.SetActive(false);
@@ -190,17 +189,25 @@ public class MessageManager : MonoBehaviour
             Debug.Log("This should not append.");
             throw new System.Exception("Unexpected answer");
         }
+
+        // On perd une vie
+        if (answer.tensionLoss < 0)
+        {
+            Debug.Log("Dimuntion");
+            lifeManager.SalutMonPote();
+            penguinManager.ModeFURAX();
+        }
         else
         {
-            // On perd une vie
-            if (answer.tensionLoss < 0)
-            {
-                Debug.Log("Dimuntion");
-                lifeManager.SalutMonPote();
-            }
-
-            SetElementNext(answer.message);
+            penguinManager.ModeRELAX();
         }
+
+        if (answer.tensionLoss > 0)
+        {
+            lifeManager.AllumerLeFeu();
+        }
+
+        SetElementNext(answer.message);
     }
 
     public void RestartGame()
