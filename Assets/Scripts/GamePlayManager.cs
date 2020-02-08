@@ -19,17 +19,16 @@ public class GamePlayManager : MonoBehaviour
         {
             IntroCanvas.SetActive(false);
             // Start game here
-            StartCameraPan();
+            StartPaperFall();
         });
 
 
     }
 
-    void StartCameraPan()
+    public void StartCameraPan()
     {
         Camera.main.gameObject.GetComponent<Animator>().SetTrigger("PanTrigger");
         // Wait for it to finish ... ?
-        StartPaperFall();
     }
 
     void StartPaperFall()
