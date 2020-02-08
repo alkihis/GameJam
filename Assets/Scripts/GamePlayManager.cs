@@ -10,6 +10,8 @@ public class GamePlayManager : MonoBehaviour
     public GameObject IntroCanvas;
     public GameObject NewsPapers;
     public MessageManager messages;
+    public GameObject MainAudioSource;
+    public GameObject GameOverAudioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,15 @@ public class GamePlayManager : MonoBehaviour
         });
 
         messages.LooseEvent += StartPaperFall;
+        messages.LooseEvent += SwitchMusic;
     }
+
+    public void SwitchMusic()
+    {
+        MainAudioSource.GetComponent<AudioSource>().Stop();
+        GameOverAudioSource.GetComponent<AudioSource>().Play();
+    }
+
 
     public void StartCameraPan()
     {
@@ -36,8 +46,11 @@ public class GamePlayManager : MonoBehaviour
 
     void StartPaperFall()
     {
+        // Also change musics
         NewsPapers.GetComponent<Animator>().SetTrigger("FallTrigger");
     }
+
+
     
     // Update is called once per frame
     void Update()
