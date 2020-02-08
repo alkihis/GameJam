@@ -1,67 +1,21 @@
 fileFormatVersion: 2
-guid: 103474f18fa07fb49baa780b5fb3268c
+guid: c283dada09fb55145b999659101fb231
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -3465503979005140942
-    second: Cube_3.001|Dance
-  externalObjects:
+      74: -8095406624313347038
+    second: Armature|KeyboardTippingCrazy
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ComputerBase
-    second: {fileID: 2100000, guid: 3b99077a9e9869f4690c376f70f4be56, type: 2}
+      74: 7116470133072151767
+    second: Armature|PenguinSleeping
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ComputerHead
-    second: {fileID: 2100000, guid: 3b99077a9e9869f4690c376f70f4be56, type: 2}
+      74: -3803870262727874240
+    second: Armature|PenguinTipping
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Fish
-    second: {fileID: 2100000, guid: 99586714346aaed47b95bc8b5b04a6a0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor
-    second: {fileID: 2100000, guid: d9f1ec3adc1f8cf4eb7902b0fd7eb0e1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor2
-    second: {fileID: 2100000, guid: 077c2a4a581fb2049a2408793ad96199, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: 099405a085391f1439a453fb6180b2a6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Office
-    second: {fileID: 2100000, guid: 5fd8a07c1a9b70840928fe4a75492cd8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Screen
-    second: {fileID: 2100000, guid: 592ec4620ba53be4f9171686a3c52f8e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Snowman
-    second: {fileID: 2100000, guid: 5d70abd66bb694c458c68475ebda1f9c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Snowman.001
-    second: {fileID: 2100000, guid: 5d70abd66bb694c458c68475ebda1f9c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tooth
-    second: {fileID: 2100000, guid: 3b99077a9e9869f4690c376f70f4be56, type: 2}
+      74: -852473736226892595
+    second: Armature|Slidding
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -94,7 +48,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
@@ -147,7 +101,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
