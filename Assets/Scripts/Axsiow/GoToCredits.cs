@@ -16,8 +16,10 @@ public class GoToCredits : MonoBehaviour{
     {
         Canvas[] canvases = Resources.FindObjectsOfTypeAll<Canvas>();
 
-        GameObject creditsCanvas = canvases[0].gameObject;
-        GameObject mainCanvas = canvases[1].gameObject;
+        GameObject creditsCanvas = canvases[1].gameObject;
+        Debug.Log (canvases[0].ToString ());
+        GameObject mainCanvas = canvases[2].gameObject;
+        Debug.Log (canvases[2].ToString ());
         mainCanvas.SetActive(false);
         creditsCanvas.SetActive(true);
             
