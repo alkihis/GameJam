@@ -12,6 +12,11 @@ public class MessageManager : MonoBehaviour
     public PenguinManager penguinManager;
     public LifeManager lifeManager;
 
+    private void Awake()
+    {
+        HideDialog();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,22 @@ public class MessageManager : MonoBehaviour
         var q1 = json.elements[start];
 
         SetElementQuestion(q1);
+
+        penguinManager.SelectPenguin("");
+
+        penguinManager.Show();
+
+        ShowDialog();
+    }
+
+    void HideDialog()
+    {
+        messageBoxFax.gameObject.SetActive(false);
+    }
+
+    void ShowDialog()
+    {
+        messageBoxFax.gameObject.SetActive(true);
     }
 
     private void SetActiveAnswers(bool be_active)
@@ -164,8 +185,6 @@ public class MessageManager : MonoBehaviour
             }
         }
 
-        // TODO diminuate score tension
-
         if (answer == null)
         {
             Debug.Log("This should not append.");
@@ -174,7 +193,6 @@ public class MessageManager : MonoBehaviour
         else
         {
             // On perd une vie
-            Debug.Log(answer.tensionLoss);
             if (answer.tensionLoss < 0)
             {
                 Debug.Log("Dimuntion");
