@@ -1,0 +1,43 @@
+{
+	"config": {},
+	"elements": [
+		{
+			"penguin": "hunter",
+			"penguinName": "Hunter the hunter",
+			"question": {
+				"text": "Hey patron ! Moi et les copains chasseurs, ça fait trois s’maines qu’on fretille dans l'coin, sans trouver un seul poisson ! Chui sur qu’il y en a plus un seul autour de l'usine ! Qu’est-ce qu’on doit faire ?",
+				"answers": [
+					{
+						"text": "Vous devez chasser plus loin ! PENGUIN CORP à toujours vendu des poisson, il faut en trouver !",
+						"tensionLoss": 10,
+						"message": "Correct"
+					},
+					{
+						"text": "Arrêtons donc de ne vendre QUE des poissons. Il y a plein de phoques sur la banquise, vendons de la graisse de phoque congelée !",
+						"tensionLoss": -10,
+						"message": "En protestation à une décision innaceptable de la direction en faveur du commerce de graisse de phoque, tout les employés se mettent en grêve."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "worker",
+			"penguinName": "Boris",
+			"question": {
+				"text": "Les camarades travailleurs et moi-même ne pouvons plus travailler dans ces conditions. Nos mains gèlent à force de plonger les poissons dans l'eau glacée.",
+				"answers": [
+					{
+						"text": "Vous avez raison. Je vais de ce pas fournir à tous les ouvriers de gants de travail.",
+						"tensionLoss": 10,
+						"message": "Correct"
+					},
+					{
+						"text": "Vous avez raison. Désormais, nous ferrons glisser les poissons dans une machine, plutôt que les plonger à la main.",
+						"tensionLoss": -10,
+						"message": "Face à une honteuse tentative patronale de mécanisation d'un savoir-faire ancestral, les ouvriers de l'usine PENGUIN CORP ont fait sauter la nouvelle machine de congelation. PENGUIN CORP a du fermer pour une durée indéterminée."
+					}
+				]
+			}
+		}
+	]
+}

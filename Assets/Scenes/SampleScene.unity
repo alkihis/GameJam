@@ -303,6 +303,50 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &270961602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270961604}
+  - component: {fileID: 270961603}
+  m_Layer: 0
+  m_Name: DialogSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &270961603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270961602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753379d9db5464976ab1de7dc3847046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonFile: {fileID: 4900000, guid: 9621427f4b7a14aa8bfc284bc9d92b5d, type: 3}
+--- !u!4 &270961604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270961602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 555.23035, y: 201.34566, z: -456.7209}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319532182
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +425,7 @@ GameObject:
   - component: {fileID: 573661683}
   - component: {fileID: 573661682}
   - component: {fileID: 573661681}
+  - component: {fileID: 573661684}
   m_Layer: 5
   m_Name: AnswerTwo
   m_TagString: Untagged
@@ -450,7 +495,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 573661682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 573661684}
+        m_MethodName: TriggerDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 573661681}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &573661682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +543,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573661679}
   m_CullTransparentMesh: 0
+--- !u!114 &573661684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573661679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937cad669b2a24b468d5492251f47aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679787475
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +567,7 @@ GameObject:
   - component: {fileID: 679787478}
   - component: {fileID: 679787477}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ATText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,6 +752,7 @@ GameObject:
   - component: {fileID: 727555409}
   - component: {fileID: 727555408}
   - component: {fileID: 727555407}
+  - component: {fileID: 727555410}
   m_Layer: 5
   m_Name: ButtonNext
   m_TagString: Untagged
@@ -753,7 +822,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 727555408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 727555410}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &727555408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,6 +870,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727555405}
   m_CullTransparentMesh: 0
+--- !u!114 &727555410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727555405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4ed1a074a2a41088031786c55150d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &801023020
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +1000,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801023020}
   m_CullTransparentMesh: 0
+--- !u!1 &873003902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873003904}
+  - component: {fileID: 873003903}
+  m_Layer: 0
+  m_Name: MessageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &873003903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873003902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80099ad07450d43699ddad19885343e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageBoxFax: {fileID: 1438025881}
+  currentElement:
+    penguin: 
+    penguinName: 
+    question:
+      text: 
+      answers: []
+--- !u!4 &873003904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873003902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 555.23035, y: 201.34566, z: -456.7209}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &928532268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1222,7 @@ GameObject:
   - component: {fileID: 994902854}
   - component: {fileID: 994902853}
   m_Layer: 5
-  m_Name: Text
+  m_Name: AOText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1250,6 +1392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1438025880}
+  - component: {fileID: 1438025881}
   m_Layer: 0
   m_Name: MessageBoxFax
   m_TagString: Untagged
@@ -1272,6 +1415,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438025881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438025879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40f1049aa2a64165a2a90a3a4ee3195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personnageName: {fileID: 928532270}
+  messageText: {fileID: 162592628}
+  buttonNext: {fileID: 727555407}
+  buttonNextText: {fileID: 1650674940}
+  buttonRestart: {fileID: 801023022}
+  buttonRestartText: {fileID: 2114617760}
+  answerOne: {fileID: 2032572530}
+  answerOneText: {fileID: 994902853}
+  answerTwo: {fileID: 573661681}
+  answerTwoText: {fileID: 679787477}
 --- !u!1 &1650674938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1449,7 @@ GameObject:
   - component: {fileID: 1650674941}
   - component: {fileID: 1650674940}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BNText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1434,6 +1599,7 @@ GameObject:
   - component: {fileID: 2032572532}
   - component: {fileID: 2032572531}
   - component: {fileID: 2032572530}
+  - component: {fileID: 2032572533}
   m_Layer: 5
   m_Name: AnswerOne
   m_TagString: Untagged
@@ -1503,7 +1669,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2032572531}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032572533}
+        m_MethodName: TriggerDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2032572530}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2032572531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,6 +1717,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032572528}
   m_CullTransparentMesh: 0
+--- !u!114 &2032572533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032572528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937cad669b2a24b468d5492251f47aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2114617758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1741,7 @@ GameObject:
   - component: {fileID: 2114617761}
   - component: {fileID: 2114617760}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BRText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
