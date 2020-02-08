@@ -5,6 +5,9 @@ using UnityEngine;
 public class Penguins : MonoBehaviour
 {
     public PenguinHunter hunter;
+    public PenguinSeller seller;
+    public PenguinColeBlanc coleBlanc;
+    public PenguinWorker worker;
 }
 
 public class Penguin : MonoBehaviour
@@ -36,13 +39,23 @@ public class Penguin : MonoBehaviour
         all.Play("Out");
     }
 
-    public void Angry()
+    public void ModeFURAX()
     {
         all.Play("Angry");
     }
 
-    public void Happy()
+    public void ModeRELAX()
     {
-        all.Play("Happy");
+        all.Play("Success");
+    }
+
+    public void Talk()
+    {
+        all.Play("Talking");
+    }
+
+    public void Idle()
+    {
+        all.Play("Idle");
     }
 }
