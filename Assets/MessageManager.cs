@@ -18,7 +18,7 @@ public class MessageManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void BeginQuestions()
     {
         var json = Dialog.dialog;
         int start = Random.Range(0, json.elements.Length);
@@ -214,6 +214,6 @@ public class MessageManager : MonoBehaviour
     {
         usedQuestions.Clear();
         lifeManager.Restart();
-        Start();
+        //Start();
     }
 }

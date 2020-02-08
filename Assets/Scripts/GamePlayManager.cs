@@ -9,6 +9,7 @@ public class GamePlayManager : MonoBehaviour
 
     public GameObject IntroCanvas;
     public GameObject NewsPapers;
+    public MessageManager messages;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class GamePlayManager : MonoBehaviour
         {
             IntroCanvas.SetActive(false);
             // Start game here
-            StartPaperFall();
+            messages.BeginQuestions();
         });
 
 
