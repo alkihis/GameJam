@@ -19,4 +19,10 @@ public class MessageBoxFax : MonoBehaviour
 
     public Button answerTwo;
     public Text answerTwoText;
+
+    public Button answerThree;
+    public Text answerThreeText;
+
+    public Button answerFour;
+    public Text answerFourText;
 }

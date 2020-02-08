@@ -10,16 +10,5 @@ public class Dialog : MonoBehaviour
     private void Awake()
     {
         dialog = JsonUtility.FromJson<DialogJson>(jsonFile.text);
-
-        Debug.Log(dialog);
-
-        foreach (var e in dialog.elements)
-        {
-            Debug.Log("Found question: " + e.question.text);
-            foreach (var a in e.question.answers)
-            {
-                Debug.Log("Found answer: " + a.text);
-            }
-        }
     }
 }

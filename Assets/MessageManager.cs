@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class MessageManager : MonoBehaviour
 {
@@ -24,12 +25,58 @@ public class MessageManager : MonoBehaviour
         SetElementQuestion(q1);
     }
 
+    private void SetActiveAnswers(bool be_active)
+    {
+        messageBoxFax.answerOne.gameObject.SetActive(true);
+        messageBoxFax.answerTwo.gameObject.SetActive(true);
+        messageBoxFax.answerThree.gameObject.SetActive(true);
+        messageBoxFax.answerFour.gameObject.SetActive(true);
+
+        messageBoxFax.answerOne.interactable = be_active;
+        messageBoxFax.answerTwo.interactable = be_active;
+        messageBoxFax.answerThree.interactable = be_active;
+        messageBoxFax.answerFour.interactable = be_active;
+        SetAnswerText(new string[] { "", "", "", "" });
+    }
+
+    private void HideAnswers()
+    {
+        messageBoxFax.answerOne.gameObject.SetActive(false);
+        messageBoxFax.answerTwo.gameObject.SetActive(false);
+        messageBoxFax.answerThree.gameObject.SetActive(false);
+        messageBoxFax.answerFour.gameObject.SetActive(false);
+    }
+
+    private void SetAnswerText(string[] elements)
+    {
+        // Don't ask, it works
+        if (elements.Length < 4)
+        {
+            messageBoxFax.answerThree.interactable = false;
+        }
+        if (elements.Length < 3)
+        {
+            messageBoxFax.answerOne.interactable = false;
+        }
+
+        messageBoxFax.answerTwoText.text = elements[0];
+        messageBoxFax.answerFourText.text = elements[1];
+        if (elements.Length > 2)
+        {
+            messageBoxFax.answerOneText.text = elements[2];
+        }
+        if (elements.Length > 3)
+        {
+            messageBoxFax.answerThreeText.text = elements[3];
+        }
+    }
+
     private void SetElementNext(string s)
     {
         messageBoxFax.buttonRestart.gameObject.SetActive(false);
-        messageBoxFax.answerOne.gameObject.SetActive(false);
-        messageBoxFax.answerTwo.gameObject.SetActive(false);
+        SetActiveAnswers(false);
         messageBoxFax.buttonNext.gameObject.SetActive(true);
+        HideAnswers();
 
         messageBoxFax.messageText.text = s;
     }
@@ -37,23 +84,23 @@ public class MessageManager : MonoBehaviour
     private void SetElementQuestion(Element e)
     {
         messageBoxFax.buttonRestart.gameObject.SetActive(false);
-        messageBoxFax.answerOne.gameObject.SetActive(true);
-        messageBoxFax.answerTwo.gameObject.SetActive(true);
+        SetActiveAnswers(true);
         messageBoxFax.buttonNext.gameObject.SetActive(false);
 
         messageBoxFax.personnageName.text = e.penguinName;
-        messageBoxFax.messageText.text = e.question.text;
-        messageBoxFax.answerOneText.text = e.question.answers[0].text;
-        messageBoxFax.answerTwoText.text = e.question.answers[1].text;
+        messageBoxFax.messageText.text = e.question.text;   
+
+         
+        SetAnswerText(e.question.answers.Select(el => el.text).ToArray());
 
         currentElement = e;
     }
 
     private void SetElementRestart(bool has_lost = true)
     {
+        HideAnswers();
+
         messageBoxFax.buttonRestart.gameObject.SetActive(true);
-        messageBoxFax.answerOne.gameObject.SetActive(false);
-        messageBoxFax.answerTwo.gameObject.SetActive(false);
         messageBoxFax.buttonNext.gameObject.SetActive(false);
 
         messageBoxFax.personnageName.text = has_lost ?
@@ -97,7 +144,10 @@ public class MessageManager : MonoBehaviour
         }
     }
 
-    /** This is called when an answer is selected, this should show answer.message message and dimunate the score tension. */
+    /// <summary>
+    /// This is called when an answer is selected, this should show answer.message message and dimunate the score tension.
+    /// </summary>
+    /// <param name="button"></param>
     public void StartNextDialogueAfterAnswer(Button button)
     {
         var e = currentElement;
@@ -138,6 +188,7 @@ public class MessageManager : MonoBehaviour
     public void RestartGame()
     {
         usedQuestions.Clear();
+        lifeManager.Restart();
         Start();
     }
 }
