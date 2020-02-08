@@ -221,6 +221,5 @@ public class MessageManager : MonoBehaviour
     {
         usedQuestions.Clear();
         lifeManager.Restart();
-        SceneManager.LoadScene("MainMenu");
     }
 }
