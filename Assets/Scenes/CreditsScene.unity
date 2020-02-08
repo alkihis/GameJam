@@ -1303,7 +1303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nDoctorant : \t\t\tNihel\nDevelopeur #1 \t\tLouis\nDevelopeur #2 \t\tBaptiste\nDevelopeur
+  m_Text: "\nDoctorant : \t\t\tNihel\nDeveloppeur #1 \t\tLouis\nDeveloppeur #2 \t\tBaptiste\nDeveloppeur
     #3 \t\tEnzo\nGame Artiste #1\t\tTheo\nGame Artiste #2\t\tNOE\nGame Designer #1\tAzarias\nGame
     Designer #2\tLorenzo\nSound Designer \t\tLaurent \n"
 --- !u!222 &1562229558
