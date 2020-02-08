@@ -19,7 +19,7 @@ public class LifeManager : MonoBehaviour
         life--;
         eventManager.LifeLost();
 
-        if (life == 0)
+        if (life <= 0)
         {
             Debug.Log("Partie terminée !");
         }

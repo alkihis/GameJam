@@ -8,7 +8,7 @@ public class GamePlayManager : MonoBehaviour
 {
 
     public GameObject IntroCanvas;
-    public GameObject NewsPapers;
+    public GameObject NewsPaper;
     public MessageManager messages;
     public GameObject MainAudioSource;
     public GameObject GameOverAudioSource;
@@ -30,7 +30,7 @@ public class GamePlayManager : MonoBehaviour
         messages.LooseEvent += SwitchMusic;
     }
 
-    public void SwitchMusic()
+    public void SwitchMusic(string _)
     {
         MainAudioSource.GetComponent<AudioSource>().Stop();
         GameOverAudioSource.GetComponent<AudioSource>().Play();
@@ -44,10 +44,12 @@ public class GamePlayManager : MonoBehaviour
         // Wait for it to finish ... ?
     }
 
-    void StartPaperFall()
+    void StartPaperFall(string reason)
     {
         // Also change musics
-        NewsPapers.GetComponent<Animator>().SetTrigger("FallTrigger");
+        NewsPaper.GetComponent<Animator>().SetTrigger("FallTrigger");
+
+        // TODO déclencher la bonne animation de newspaper
     }
 
 

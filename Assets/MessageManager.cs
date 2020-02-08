@@ -13,7 +13,7 @@ public class MessageManager : MonoBehaviour
     public PenguinManager penguinManager;
     public LifeManager lifeManager;
     
-    public delegate void OnLose();
+    public delegate void OnLose(string reason);
     public event OnLose LooseEvent;
 
     private void Awake()
@@ -112,6 +112,8 @@ public class MessageManager : MonoBehaviour
         HideAnswers();
 
         messageBoxFax.messageText.text = s;
+        messageBoxFax.messageText.alignment = TextAnchor.MiddleCenter;
+        messageBoxFax.messageText.fontSize = 22;
     }
 
     private void SetElementQuestion(Element e)
@@ -124,9 +126,11 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.buttonNext.gameObject.SetActive(false);
 
         messageBoxFax.personnageName.text = e.penguinName;
-        messageBoxFax.messageText.text = e.question.text;   
+        messageBoxFax.messageText.text = e.question.text;
+        messageBoxFax.messageText.alignment = TextAnchor.UpperLeft;
+        messageBoxFax.messageText.fontSize = 18;
 
-         
+
         SetAnswerText(e.question.answers.Select(el => el.text).ToArray());
 
         currentElement = e;
@@ -142,6 +146,7 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.personnageName.text = has_lost ?
             "Perdu :(" :
             "Bravo !";
+        messageBoxFax.messageText.alignment = TextAnchor.MiddleCenter;
         messageBoxFax.messageText.text = has_lost ?
             "Vous avez perdu toutes vos vies. Recommencer ?" :
             "Il ne reste plus aucune question. Vous avez réussi à garder toutes vos vies !";
@@ -159,7 +164,7 @@ public class MessageManager : MonoBehaviour
         {
             messageBoxFax.gameObject.SetActive(false);
             penguinManager.Hide();
-            LooseEvent();
+            LooseEvent(currentElement.tensionType);
             return;
         }
 
