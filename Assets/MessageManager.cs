@@ -68,8 +68,20 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.answerFour.gameObject.SetActive(false);
     }
 
+    private void ShuffleAnswers(string[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            string temp = list[i];
+            int randomIndex = Random.Range(i, list.Length);
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
+        }
+    }
+
     private void SetAnswerText(string[] elements)
     {
+        ShuffleAnswers(elements);
         // Don't ask, it works
         if (elements.Length < 4)
         {
