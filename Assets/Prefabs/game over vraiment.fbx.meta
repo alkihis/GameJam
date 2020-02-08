@@ -1,20 +1,11 @@
 fileFormatVersion: 2
-guid: 4d1d96847cd19f84b8caedd228365acf
+guid: e831171730d56c44480360ef23a76e9e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -6088303585039545357
-    second: Armature|WorkerAngry
-  - first:
-      74: -703764038740619825
-    second: Armature|WorkerIdle
-  - first:
-      74: 4190067464632262162
-    second: Armature|WorkerSuccess
-  - first:
-      74: 6360706184736016720
-    second: Armature|WorkerTalking
+      74: -5187248419258813496
+    second: Plane|PlaneAction
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -101,7 +92,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

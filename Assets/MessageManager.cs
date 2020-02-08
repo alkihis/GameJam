@@ -11,6 +11,9 @@ public class MessageManager : MonoBehaviour
     private readonly HashSet<int> usedQuestions = new HashSet<int>();
     public PenguinManager penguinManager;
     public LifeManager lifeManager;
+    
+    public delegate void OnLose();
+    public event OnLose LooseEvent;
 
     private void Awake()
     {
@@ -18,7 +21,7 @@ public class MessageManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void BeginQuestions()
     {
         var json = Dialog.dialog;
         int start = Random.Range(0, json.elements.Length);
@@ -130,6 +133,7 @@ public class MessageManager : MonoBehaviour
             "Vous avez perdu toutes vos vies. Recommencer ?" :
             "Il ne reste plus aucune question. Vous avez réussi à garder toutes vos vies !";
     }
+    
 
 
     public void StartNextQuestion()
@@ -140,7 +144,9 @@ public class MessageManager : MonoBehaviour
         // Le joueur a perdu
         if (lifeManager.life == 0)
         {
-            SetElementRestart(true);
+            messageBoxFax.gameObject.SetActive(false);
+            penguinManager.Hide();
+            LooseEvent();
             return;
         }
 
@@ -214,6 +220,6 @@ public class MessageManager : MonoBehaviour
     {
         usedQuestions.Clear();
         lifeManager.Restart();
-        Start();
+        //Start();
     }
 }

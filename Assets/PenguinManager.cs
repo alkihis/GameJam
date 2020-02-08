@@ -13,6 +13,19 @@ public class PenguinManager : MonoBehaviour
 
     public Penguin current_penguin;
 
+    void Awake()
+    {
+        HidePinguins();
+    }
+
+    public void HidePinguins()
+    {
+        penguins.hunter.Hide();
+        penguins.worker.Hide();
+        penguins.coleBlanc.Hide();
+        penguins.seller.Hide();
+    }
+
     public void SelectPenguin(string name)
     {
         if (current_penguin)
@@ -22,10 +35,7 @@ public class PenguinManager : MonoBehaviour
         }
 
         Debug.Log(name);
-        penguins.hunter.Hide();
-        penguins.worker.Hide();
-        penguins.coleBlanc.Hide();
-        penguins.seller.Hide();
+        HidePinguins();
 
         switch (name)
         {
