@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 8965a9048afaa094785d462e20e4fa4d
+guid: c283dada09fb55145b999659101fb231
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -8048136058626817161
-    second: Armature|BuisnessguinAngry
+      74: -8095406624313347038
+    second: Armature|KeyboardTippingCrazy
   - first:
-      74: 3140252814968954830
-    second: Armature|BuisnessguinIdle
+      74: 7116470133072151767
+    second: Armature|PenguinSleeping
   - first:
-      74: -1770858636000841655
-    second: Armature|BuisnessguinSuccess
+      74: -3803870262727874240
+    second: Armature|PenguinTipping
   - first:
-      74: -4665854831113254359
-    second: Armature|BuisnessPenguinTalking
+      74: -852473736226892595
+    second: Armature|Slidding
   externalObjects: {}
   materials:
     materialImportMode: 1

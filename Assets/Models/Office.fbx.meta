@@ -20,6 +20,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Fish
+    second: {fileID: 2100000, guid: 99586714346aaed47b95bc8b5b04a6a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor
     second: {fileID: 2100000, guid: d9f1ec3adc1f8cf4eb7902b0fd7eb0e1, type: 2}
   - first:
@@ -32,6 +37,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Glass
     second: {fileID: 2100000, guid: 099405a085391f1439a453fb6180b2a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LogoPengCorp
+    second: {fileID: 2100000, guid: 84966884ec94e0847a420e63d739911e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
