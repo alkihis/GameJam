@@ -12,6 +12,12 @@ public class GoToMenu : MonoBehaviour {
     }
 
     private void Back () {
-        SceneManager.LoadScene ("MainMenu");
+        Canvas[] canvases = Resources.FindObjectsOfTypeAll<Canvas>();
+
+        GameObject creditsCanvas = canvases[0].gameObject;
+        GameObject mainCanvas = canvases[1].gameObject;
+        creditsCanvas.SetActive(false);
+        mainCanvas.SetActive(true);
+
     }
 }
