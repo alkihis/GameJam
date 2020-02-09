@@ -259,6 +259,7 @@ public class MessageManager : MonoBehaviour
         }
         else
         {
+            GetComponent<AudioSource>().Play();
             PlayHappySound();
             penguinManager.ModeRELAX();
         }
