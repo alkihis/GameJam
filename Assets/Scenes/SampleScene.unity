@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.32571435, g: 0.58771175, b: 0.79133856, a: 1}
+  m_IndirectSpecularColor: {r: 0.3258961, g: 0.5866953, b: 0.7916447, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2593,12 +2593,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Salut l'ami, <b>bravo</b> pour le rachat de Penguin Corp. Tu vas devoir
     prendre en main l'entreprise et ses employ\xE9s. Pas forc\xE9ment une t\xE2che
-    facile quand on connait certains caract\xE8res ... \U0001F612\U0001F612\U0001F612\U0001F612\nTes
+    facile quand on conna\xEEt certains caract\xE8res... \U0001F612\U0001F612\U0001F612\U0001F612\nTes
     employ\xE9s viendront te voir s'ils rencontrent des probl\xE8mes, trouve la r\xE9ponse
-    qui <b>diminue les tensions</b> pour am\xE9liorer l'ambiance de travail.\nCe
-    n'est que comme \xE7a que ton entreprise gardera le cap, fait attention \xE0
-    chaque parole, car si les tentions augmentent cela risque d'entra\xEEner l'entrprise
-    \xE0 sa perte !"
+    qui <b>diminue les tensions</b> pour am\xE9liorer l'ambiance de travail.\nTon
+    entreprise doit garder le cap, fais attention \xE0 chaque parole, car si les
+    tensions augmentent cela risque d'entra\xEEner l'entreprise \xE0 sa perte !"
 --- !u!1 &527249757
 GameObject:
   m_ObjectHideFlags: 0
