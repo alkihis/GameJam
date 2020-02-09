@@ -1,0 +1,400 @@
+{
+	"config": {},
+	"elements": [
+		{
+			"penguin": "hunter",
+			"penguinName": "Gaston Bismuth",
+			"tensionType": "apprentissage",
+			"question": {
+				"text": "Y'en a marre : On m'demande toujours plus de poiscaille ! J'chasse avec mes mains moi, comme on fait depuis 10 ans ! J'arrive pas à suivre !",
+				"answers": [
+					{
+						"text": "J'ai prévu des formations à la canne à pêche. Pourrez-vous chasser à la main en attendant d'apprendre la nouvelle technique ?",
+						"tensionLoss": 0,
+						"message": "Grmbl, mouais, j'me débrouillerai le temps d'savoir tenir vot' môdite canne à pêche."
+					},
+					{
+						"text": "Ca tombe très bien, j'ai décidé que dès demain, nous pêcherons uniquement à la canne à pêche.",
+						"tensionLoss": -1,
+						"message": "Vous m'prenez pour Einstein !? Comment j'vais m'servir dvôt matos high-tech du jour au lend'main !? J'y arrivrai jamais !"
+					},
+					{
+						"text" : "On ne change pas comme ça une méthode de plus de 10 ans !",
+						"tensionLoss" : -1,
+						"message" : "Eh bin vous irez chasser vôt poiscaille vous-même ! Moi j'en ai ras la soupière !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "hunter",
+			"penguinName": "Gaston Bismuth",
+			"tensionType": "organisation",
+			"question": {
+				"text": "Dites, vous m'prendriez pas pour Superman des fois ? Chui seul à chasser 100 poiscailles la journée ! Y m'faut du renfort !",
+				"answers": [
+					{
+						"text": "J'ai demandé à Boris, un ouvrier de l'usine, de venir vous aider à partir de demain.",
+						"tensionLoss": 0,
+						"message": "Ha ben ça fait zizir d'être sout'nu ! Bravo !"
+					},
+					{
+						"text": "Nous n'avons pas le budget pour une personne supplémentaire, je suis désolé.",
+						"tensionLoss": -1,
+						"message": "Dites vôt boîte aura encor' moins d'budget si je peux pas vous ram'ner vos poiscailles ! Alors du respect !"
+					},
+					{
+						"text" : "J'ai du dépasser le budget, mais nous avons embauché une personne en plus.",
+						"tensionLoss" : -1,
+						"message" : "Vous avez dépassé le budget !? Nous risquons la banqu'route, arrêtez de prendre c'type de décision inconsidérée !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "hunter",
+			"penguinName": "Gaston Bismuth",
+			"tensionType": "identité",
+			"question": {
+				"text": "Hey patron ! Moi et les copains chasseurs, ça fait trois s’maines qu’on frétille dans l'coin, sans trouver un seul poisson ! C'est l'symbole de nôt boîte ! Comment on va faire ?",
+				"answers": [
+					{
+						"text": "PENGUIN CORP à toujours vendu des poissons, ça fait partie de notre identité, il faut tout faire pour en trouver !",
+						"tensionLoss": 0,
+						"message": "Ça c'est parlé ! Les poissons c'est nôt fierté, on chassera jusqu'à en trouver !"
+					},
+					{
+						"text": "S'il n'y a plus de poisson, laissons tomber ! Changeons complètement de secteur, et vendons de la graisse de phoque.",
+						"tensionLoss": -1,
+						"message": "D'la graisse de phoque ? Yeurk ! Nôt boîte vend des poissons depuis toujours, on refuse qu'vous changiez tout comme ça !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "hunter",
+			"penguinName": "Gaston Bismuth",
+			"tensionType": "performance",
+			"question": {
+				"text": "Gérard de l'usine c'est un vrai casse-pieds ! Y ralentit tout l'monde, et on arrive pas à t'nir nos quotas d'poiscaille ! Faites quek'chose ou j'y fous ma nageoire dans l'bec !",
+				"answers": [
+					{
+						"text": "Il faut que les différentes équipes discutent d'une meilleure organisation. Faisons un séminaire.",
+						"tensionLoss": 1,
+						"message": "Bon, comme ça je pourrait p'têt travailler comme y faut."
+					},
+					{
+						"text": "J'ai convoqué Gérard, nous allons discuter ensemble de votre désaccord.",
+						"tensionLoss": -1,
+						"message": "Roh mais j'm'en fiche d'vôt Gérard ! J'veut juste ranger le poisson qu'je pêche à temps ! Crénomdidju !"
+					},
+					{
+						"text": "Vous ne devez pas vous occuper du travail de Gérard, concentrez vous sur votre tâche.",
+						"tensionLoss": -1,
+						"message": "Mais y m'empèche d'bosser nom d'un ours polaire ! Si vous voulez qu'vôt boîte flotte, z'allez dvoir être plus efficace que ça !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "worker",
+			"penguinName": "Petrouchka Gregorovitch",
+			"tensionType": "apprentissage",
+			"question": {
+				"text": "Depuis votre rachat, le camarade chef-machiniste, Vladimir, refuse de pointer à l'usine. Mais il est seul à savoir réparer les machines, nous avons besoin de ses compétences.",
+				"answers": [
+					{
+						"text": "De toute façon, nous avons besoin de son savoir. J'irai le voir ce soir, pour le convaincre de revenir.",
+						"tensionLoss": 0,
+						"message": "Il reviendra probablement en voyant le respect que vous avez pour notre savoir-faire prolétaire."
+					},
+					{
+						"text": "Il est inacceptable qu'un employé s'absente sans motif ! Je le licencie sur le champ !",
+						"tensionLoss": -1,
+						"message": "C'est une décision stupide, typique d'un patron capitaliste ! Nous ne sommes pas plus avancés maintenant, sans chef-machiniste ! Qu'arrivera-t-il si l'usine tombe en panne ?"
+					},
+					{
+						"text": "S'il ne veut plus travailler comme machiniste, peut-être acceptera-t-il un poste de formateur, afin de transmettre ses connaissances ?",
+						"tensionLoss": 1,
+						"message": "Humpf. De tout évidence, un patron a parfois des idées excellentes. Je suis sûre que le camarade Vladimir acceptera."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "worker",
+			"penguinName": "Petrouchka Gregorovitch",
+			"tensionType": "organisation",
+			"question": {
+				"text": "Le camarade Igor est encore venu me voir, pour que je lui expique le processus de congélation. Il ne comprend rien à rien, et gêne nos équipes.",
+				"answers": [
+					{
+						"text": "Renvoyons-le en formation, pour qu'il prenne le temps de comprendre son travail.",
+						"tensionLoss": 0,
+						"message": "Bien, au moins il ne restera pas dans nos pattes."
+					},
+					{
+						"text": "Je vais vous libérer du temps pour encadrer Igor, et le former à son rythme, en travaillant.",
+						"tensionLoss": 1,
+						"message": "Quelle excellente idée ! Nous pourrons le former sans qu'il gêne trop le travail des camarades !"
+					},
+					{
+						"text": "À partir d'aujourd'hui, envoyez-le moi dès qu'il y a un problème.",
+						"tensionLoss": -1,
+						"message": "C'est du bricolage ! Cette voix ne résout pas le problème, et vous allez perdre votre temps en même temps que celui du syndicat !"
+					},
+					{
+						"text" :"J'ai confiance en Igor, il s'en sortira très bien en autonomie.",
+						"tensionLoss" : -1,
+						"message" : "Mais le syndicat a autre chose à faire ! L'aider nous dérange et désorganise notre usine."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "worker",
+			"penguinName": "Petrouchka Gregorovitch",
+			"tensionType": "identité",
+			"question": {
+				"text": "Les camarades travailleurs et moi-même ne pouvons plus travailler dans ces conditions. Le savoir-faire ancestral de congélation à la main dans l'eau glacée nous fait des engelures aux nageoires.",
+				"answers": [
+					{
+						"text": "Vous avez raison. Je vais de ce pas fournir à tous les ouvriers des gants de travail.",
+						"tensionLoss": 0,
+						"message": "Voilà qui satisfait amplement les revendications de notre parti, et respecte les savoir-faire du prolétariat."
+					},
+					{
+						"text": "Vous avez raison. Désormais, nous ferons glisser les poissons dans une machine, plutôt que les plonger à la main.",
+						"tensionLoss": -1,
+						"message": "Vous ne pouvez pas rejeter le savoir-faire de nos camarades au profit d'une machine ! Nos valeurs ont toujours été de conserver les traditions ancestrales ! Votre infâme machine va tout détruire !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "worker",
+			"penguinName": "Petrouchka Gregorovitch",
+			"tensionType": "performance",
+			"question": {
+				"text": "Le plan quinquennal validé par le comité est très clair : nous devons livrer 100 poissons par jour. Mais les chasseurs n'en attrapent que 75, comment pouvons-nous gagner en performance ?",
+				"answers": [
+					{
+						"text": "Je vais embaucher un ouvrier supplémentaire pour que nous atteignions nos quotas.",
+						"tensionLoss": 0,
+						"message": "Bravo ! Un camarade travailleur de plus nous aidera à nourrir un maximum de prolétaires."
+					},
+					{
+						"text": "Eh bien, revoyons le plan et contentons nous de 75 poissons/jour.",
+						"tensionLoss": -1,
+						"message": "C'est hors de question ! Moins de ventes veut dire moins de paye, et nos camarades ont des familles à nourrir !"
+					},
+					{
+						"text": "Les chasseurs ne sont pas assez efficaces, je vais leur demander d'augmenter la cadence.",
+						"tensionLoss": -1,
+						"message": "Eh dis donc mon p'tit manchot ! Si tu crois qu'c'est facile d'attraper 100 poisons à la journée, t'à qu'à l'faire à nôt place !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "manager",
+			"penguinName": "Emmanuel Pichon",
+			"tensionType": "apprentissage",
+			"question": {
+				"text": "Louise Bertier, du pôle comptabilité, maîtrise un logiciel de calcul novateur, qui augmenterait d'environ 32% notre efficacité. Mais nous sommes tous habitués à notre vieux système, et en apprendre un nouveau nous demanderait 23 jours, 4 heures et 26 minutes.",
+				"answers": [
+					{
+						"text": "Coupons la poire en deux ; une équipe utilisera l'ancien logiciel, et une autre le nouveau.",
+						"tensionLoss": 0,
+						"message": "Voilà une solution admirable ! Notre productivité devrait monter d'au moins 53% !"
+					},
+					{
+						"text": "Faisons une réunion pour discerner les points forts et les points faibles de chacun. Cela devrait faciliter un changement progressif.",
+						"tensionLoss": 1,
+						"message": "Quelle sagacité ! Quelle vision ! On comprend pourquoi vous êtes le chef, chef."
+					},
+					{
+						"text": "Si le nouveau logiciel est mieux, laissons tomber l'ancien ! Place aux jeunes !",
+						"tensionLoss": -1,
+						"message": "Un tel mépris pour notre travail minutieux est proprement insupportable ! Je proteste énergiquement !"
+					},
+					{
+						"text": "Nous avons bien réussi à faire sans cette nouveauté jusque-là, nous continuerons à nous en passer.",
+						"tensionLoss": -1,
+						"message": "Voilà qui fait état d'un cruel manque d'imagination ! Monsieur, je ne vous félicite pas !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "manager",
+			"penguinName": "Emmanuel Pichon",
+			"tensionType": "organisation",
+			"question": {
+				"text": "Valentin Lefebvre, du pôle statistiques, a été détaché sur la gestion des ours polaires il y a 3 mois. Il a encore du travail, mais c'est aussi notre spécialiste en extrapolation non linéaire de série de Fourier-Laplace-Tchebyshev, et nous avons besoin de son expertise sur le dossier Dutartre.",
+				"answers": [
+					{
+						"text": "Je vais voir avec lui pour aménager son emploi du temps. Il travaillera sur les deux dossiers en même temps.",
+						"tensionLoss": 0,
+						"message": "Connaissant Lefebvre, il pourra même faire des heures supplémentaires. Bien pensé, Monsieur le Directeur."
+					},
+					{
+						"text": "Le dossier Dutartre est prioritaire, je vais dire à Lefebvre de laisser tomber les ours pour l'instant.",
+						"tensionLoss": -1,
+						"message": "Hé ben bravo ! Le gus qui r'gardait les ours polaires est parti, et ces sales bêtes ont ratiboisé les poiscailles ! On peut savoir c'qui vous passe dans l'ciboulot à la direction ?"
+					},
+					{
+						"text": "Je suis sûr que Lefebvre a été détaché sur les ours polaires pour une bonne raison. Le dossier Dutartre devra attendre.",
+						"tensionLoss": -1,
+						"message": "Eh bien dis donc, on peut dire que vous ne vous mouchez pas avec le dos de la cuillère, vous ! Oui oui, vous m'avez bien compris, hein, vraiment décevant comme direction. Peuh."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "manager",
+			"penguinName": "Emmanuel Pichon",
+			"tensionType": "identité",
+			"question": {
+				"text": "L'alliance avec FishGov négociée par le pôle fusion a été acceptée. Nous avons désormais le monopole du poisson surgelé ! Quelle devrait être notre stratégie, Monsieur le Directeur ?",
+				"answers": [
+					{
+						"text": "Nous allons adapter notre stratégie. Continuons comme avant pour le marché national, et soyons plus agressifs à l'international.",
+						"tensionLoss": 0,
+						"message": "Vous avez raison de suivre les choix de votre prédecesseur. Vous avez mon entier soutien, Monsieur le Directeur."
+					},
+					{
+						"text": "Changeons de stratégie, et soyons agressifs au national et à l'international.",
+						"tensionLoss": -1,
+						"message": "Cela est contraire à toutes les valeurs en lesquelles nous croyons ! Je m'oppose avec énergie à cette agressivité regrettable."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "manager",
+			"penguinName": "Emmanuel Pichon",
+			"tensionType": "performance",
+			"question": {
+				"text": "Bernard Morel, du service communication, propose d'utiliser du carton plutôt que des sacs plastiques pour transporter nos produits. Ils sont plus chers, mais amélioreraient notre image publique.",
+				"answers": [
+					{
+						"text": "L'idée est intéressante, mais changer pour des sacs biodégradables plutôt que pour des cartons pourraient coûter moins cher.",
+						"tensionLoss": 0,
+						"message": "Quelle proposition lumineuse, Monsieur le Directeur ! Je rends les armes devant tant d'ingéniosité !"
+					},
+					{
+						"text": "Tant pis pour l'argent, améliorer notre image publique est notre priorité !",
+						"tensionLoss": -1,
+						"message": " Monsieur le directeur, vous être prié de réfléchir un peu avant d'engager l'entreprise dans des dépenses inconsidérées ! Nous ne devons pas réduire nos performances !"
+					},
+					{
+						"text": "Nos performances risquent d'en souffrir, c'est quelque chose que je ne peux permettre.",
+						"tensionLoss": -1,
+						"message": "Je suis désappointé de voir si peu de considérations pour les propositions de vos employés. Je suis profondément déçu de vous, Monsieur le Directeur..."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "seller",
+			"penguinName": "Jean-Startup de la Volière",
+			"tensionType": "apprentissage",
+			"question": {
+				"text": "J'avais <b>pull</b> un <b>reminder</b> sur la possibilité d'obtenir un <b>award</b> ISO 9001. On aura quelques formations à faire pour améliorer le <b>workflow</b>, mais y'a un gros <b>win</b> sur notre image de marque, tu me suis ?",
+				"answers": [
+					{
+						"text": "Faites-moi une liste de ces changements, nous les intégrerons petit à petit.",
+						"tensionLoss": 0,
+						"message": "Ça c'est un <b>leadership</b> de champion ! Faisons comme ça mon coco !"
+					},
+					{
+						"text": "Cet apprentissage ne me semble pas prioritaire, nous avons beaucoup de travail en ce moment.",
+						"tensionLoss": -1,
+						"message": "Tellement faible comme attitude, c'est pas avec ce <b>mindset</b> que vous allez monter à l'international..."
+					},
+					{
+						"text": "Mettons en pause notre production, le temps de former l'ensemble de l'entreprise !",
+						"tensionLoss": -1,
+						"message": "Holà, tu t'emballes trop <b>quickly</b> frangin, tout ça est vraiment trop extrême."
+					}
+				]
+			}
+		},
+		{
+			"penguin": "seller",
+			"penguinName": "Jean-Startup de la Volière",
+			"tensionType": "organisation",
+			"question": {
+				"text": "Je viens de <b>catch</b> une info : Petrouchka Gregorovitch est enceinte, et doit rester <b>off</b> 3 mois. Mais j'ai besoin de son <b>teaching</b> pour les contrats russes, alors comment on fait ?",
+				"answers": [
+					{
+						"text": "Tout est organisé : une ligne de traîneau convoiera ses messages pour qu'elle puisse travailler de chez elle.",
+						"tensionLoss": 0,
+						"message": "Ça c'est du <b>smart thinking</b> comme je l'aime ! T'es vraiment mon boss préféré."
+					},
+					{
+						"text": "Elle risque de démissionner si on refuse, ça désorganise nos plans, mais on doit lui donner ses 3 mois d'arrêt.",
+						"tensionLoss": -1,
+						"message": "Et du coup on <b>let go</b> les contrats russes ! Faut <b>work</b> tes priorités et bosser ton organisation là, ça va pas là !"
+					},
+					{
+						"text": "Les contrats russes sont vitaux pour notre répartition de travail, j'ai donc exigé qu'elle revienne au bout d'un mois seulement.",
+						"tensionLoss": -1,
+						"message": "Cette atteinte des droits salariaux est inacceptable ! Vous n'aviez qu'à mieux vous organiser avec les Russes ! Vous allez avoir des nouvelles du syndicat, espèce de capitaliste véreux !"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "seller",
+			"penguinName": "Eddy Sruptif",
+			"tensionType": "identité",
+			"question": {
+				"text": "Petrouchka s'est mise à organiser des <b>breakfast</b> chill & nogluten tout les lundis, tu vois ? C'est plutôt fun, mais chez PenguinCorp, on est plutôt boulot boulot d'habitude.",
+				"answers": [
+					{
+						"text": "Si les employés sont contents, organisons ces petit-déjeuners dans toute l'entreprise tous les premiers lundis du mois.",
+						"tensionLoss": 0,
+						"message": "Là tu me plais, là je <b>believe</b> dans ton <b>leadership</b> Marc ! <i>Yeah, bring it on</i> !"
+					},
+					{
+						"text": "Je ne vous paye pas à boire du café, désolé, mais effectivement ça n'est pas le genre de la maison.",
+						"tensionLoss": -1,
+						"message": "Holà, mollo coco, tu devrais <b>open</b> un peu plus ton <b>mind</b> si tu veux rester in, capisce ?"
+					},
+					{
+						"text": "Faisons-en une tradition dans l'entreprise : petit-déjeuner deux fois par semaine !",
+						"tensionLoss": -1,
+						"message": "Là tu vas vraiment <b>out of the line</b> boss... Ici on est aussi fier de notre <b>work</b>, on va pas passer notre <b>time</b> à nous faire des snacks, compris chéri ?"
+					}
+				]
+			}
+		},
+		{
+			"penguin": "seller",
+			"penguinName": "Eddy Sruptif",
+			"tensionType": "performance",
+			"question": {
+				"text": "Maintenant qu'on est leader sur le <b>social-friendly</b>, on pourrait utliser notre image de marque pour améliorer nos recettes. Un <b>cash-in</b> comme on dit, tu vois ?",
+				"answers": [
+					{
+						"text": "Profitons de cette image pour augmenter nos bénéfices, mais de façon humaine, pour ne pas la dégrader.",
+						"tensionLoss": 0,
+						"message": "Ha ouais, genre <b>smart thinking</b> à donf', hein ? Oki doki, on fait comme tu le sens !"
+					},
+					{
+						"text": "Notre but, c'est de générer le plus de profit. Comment utiliser cette image pour de meilleures performances ?",
+						"tensionLoss": -1,
+						"message": "Écoute, je respecte ta <b>straight-forwardness</b> OK ? Mais là, y'a des limites à la course à la performance, t'es trop <b>far behind</b> boss."
+					},
+					{
+						"text": "Mieux vaut conserver les valeurs humaines que nous avons développé, sans chercher à les mettre à profit...",
+						"tensionLoss": -1,
+						"message": "Franchement, être aussi fleur bleue, c'est SO 2008 quoi. Je suis écoeuré, <b>you see</b> ?"
+					}
+				]
+			}
+		}
+	]
+}
