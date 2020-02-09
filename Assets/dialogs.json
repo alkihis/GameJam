@@ -14,7 +14,7 @@
 						"message": "Grmbl, mouais, j'me débrouillerai le temps d'savoir tenir vot' môdite canne à pêche."
 					},
 					{
-						"text": "Ca tombe très bien, j'ai décidé  que dès demain, nous pêcherons uniquement à la canne à pêche.",
+						"text": "Ca tombe très bien, j'ai décidé que dès demain, nous pêcherons uniquement à la canne à pêche.",
 						"tensionLoss": -1,
 						"message": "Vous m'prenez pour Einstein !? Comment j'vais m'servir dvôt matos high-tech du jour au lend'main !? J'y arrivrai jamais !"
 					},
@@ -89,7 +89,7 @@
 						"message": "Roh mais j'm'en fiche d'vôt Gérard ! J'veut juste ranger le poisson qu'je pêche à temps ! Crénomdidju !"
 					},
 					{
-						"text": "Vous ne devez pas vous occuper du travail de Gérard,  concentrez vous sur votre tâche.",
+						"text": "Vous ne devez pas vous occuper du travail de Gérard, concentrez vous sur votre tâche.",
 						"tensionLoss": -1,
 						"message": "Mais y m'empèche d'bosser nom d'un ours polaire ! Si vous voulez qu'vôt boîte flotte, z'allez dvoir être plus efficace que ça !"
 					}
@@ -209,7 +209,7 @@
 						"message": "Voilà une solution admirable ! Notre productivité devrait monter d'au moins 53% !"
 					},
 					{
-						"text": "Ces logiciels ne doivent pas être si différents, faisons une réunion pour discerner les points forts et les points faibles de chacun. Cela devrait faciliter un changement progressif.",
+						"text": "Faisons une réunion pour discerner les points forts et les points faibles de chacun. Cela devrait faciliter un changement progressif.",
 						"tensionLoss": 1,
 						"message": "Quelle sagacité ! Quelle vision ! On comprend pourquoi vous êtes le chef, chef."
 					},
