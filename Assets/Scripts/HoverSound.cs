@@ -6,6 +6,6 @@ public class HoverSound : MonoBehaviour
 {
    public void PlayHoverSound()
    {
-      
+      GetComponent<AudioSource>().Play();
    }
 }
