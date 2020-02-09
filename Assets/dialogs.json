@@ -376,7 +376,7 @@
 			"penguinName": "Jean-Startup de la Volière",
 			"tensionType": "performance",
 			"question": {
-				"text": "Maintenant qu'on est leader sur le social-friendly, on pourrait utliser notre image de marque pour améliorer nos recettes. Un cash-in comme on dit, tu vois ?",
+				"text": "Maintenant qu'on est <b>leader</b> sur le social-friendly, on pourrait utliser notre image de marque pour améliorer nos recettes. Un cash-in comme on dit, tu vois ?",
 				"answers": [
 					{
 						"text": "Profitons de cette image pour augmenter nos bénéfices, mais de façon humaine, pour ne pas la dégrader.",
