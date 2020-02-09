@@ -56,7 +56,7 @@
 			"penguinName": "Gaston Bismuth",
 			"tensionType": "identité",
 			"question": {
-				"text": "Hey patron ! Moi et les copains chasseurs, ça fait trois s’maines qu’on frétille dans l'coin, sans trouver un seul poisson ! C'est l'symbole de nôt boite ! Comment on va faire ?",
+				"text": "Hey patron ! Moi et les copains chasseurs, ça fait trois s’maines qu’on frétille dans l'coin, sans trouver un seul poisson ! C'est l'symbole de nôt boîte ! Comment on va faire ?",
 				"answers": [
 					{
 						"text": "PENGUIN CORP à toujours vendu des poissons, ça fait partie de notre identité, il faut tout faire pour en trouver !",
@@ -66,7 +66,7 @@
 					{
 						"text": "S'il n'y a plus de poisson, laissons tomber ! Changeons complètement de secteur, et vendons de la graisse de phoque.",
 						"tensionLoss": -1,
-						"message": "D'la graisse de phoque ? Yeurk ! Nôt boite vend des poissons depuis toujours, on refuse qu'vous changiez tout comme ça !"
+						"message": "D'la graisse de phoque ? Yeurk ! Nôt boîte vend des poissons depuis toujours, on refuse qu'vous changiez tout comme ça !"
 					}
 				]
 			}
@@ -91,7 +91,7 @@
 					{
 						"text": "Vous ne devez pas vous occuper du travail de Gérard,  concentrez vous sur votre tâche.",
 						"tensionLoss": -1,
-						"message": "Mais y m'empèche d'bosser nom d'un ours polaire ! Si vous voulez qu'vôt boite flotte, z'allez dvoir être plus efficace que ça !"
+						"message": "Mais y m'empèche d'bosser nom d'un ours polaire ! Si vous voulez qu'vôt boîte flotte, z'allez dvoir être plus efficace que ça !"
 					}
 				]
 			}
@@ -286,7 +286,7 @@
 					{
 						"text": "Tant pis pour l'argent, améliorer notre image publique est notre priorité !",
 						"tensionLoss": -1,
-						"message": " Monsieur le directeur, vous être prié de réfléchir un peu avant d'engager l'entreprise dans des dépense inconsidérées ! Nous ne devons pas réduire nos performances !"
+						"message": " Monsieur le directeur, vous être prié de réfléchir un peu avant d'engager l'entreprise dans des dépenses inconsidérées ! Nous ne devons pas réduire nos performances !"
 					},
 					{
 						"text": "Nos performances risquent d'en souffrir, c'est quelque chose que je ne peux permettre.",
@@ -301,22 +301,22 @@
 			"penguinName": "Jean-Startup de la Volière",
 			"tensionType": "apprentissage",
 			"question": {
-				"text": "J'avais pull un reminder sur la possibilité d'obtenir un award ISO 9001. On aura quelques formations à faire pour améliorer le workflow, mais y'a un gros win sur notre image de marque, tu me suis ?",
+				"text": "J'avais <b>pull</b> un <b>reminder</b> sur la possibilité d'obtenir un <b>award</b> ISO 9001. On aura quelques formations à faire pour améliorer le <b>workflow</b>, mais y'a un gros <b>win</b> sur notre image de marque, tu me suis ?",
 				"answers": [
 					{
 						"text": "Faites-moi une liste de ces changements, nous les intégrerons petit à petit.",
 						"tensionLoss": 0,
-						"message": "Ça c'est un leadership de champion ! Faisons comme ça mon coco !"
+						"message": "Ça c'est un <b>leadership</b> de champion ! Faisons comme ça mon coco !"
 					},
 					{
 						"text": "Cet apprentissage ne me semble pas prioritaire, nous avons beaucoup de travail en ce moment.",
 						"tensionLoss": -1,
-						"message": "Tellement faible comme attitude, c'est pas avec ce mindset que vous allez monter à l'international..."
+						"message": "Tellement faible comme attitude, c'est pas avec ce <b>mindset</b> que vous allez monter à l'international..."
 					},
 					{
 						"text": "Mettons en pause notre production, le temps de former l'ensemble de l'entreprise !",
 						"tensionLoss": -1,
-						"message": "Holà, tu t'emballes trop quickly frangin, tout ça est vraiment trop extrême."
+						"message": "Holà, tu t'emballes trop <b>quickly</b> frangin, tout ça est vraiment trop extrême."
 					}
 				]
 			}
@@ -326,17 +326,17 @@
 			"penguinName": "Jean-Startup de la Volière",
 			"tensionType": "organisation",
 			"question": {
-				"text": "Je viens de catch une info : Petrouchka Gregorovitch est enceinte, et doit rester off 3 mois. Mais j'ai besoin de son teaching pour les contrats russes, alors comment on fait ?",
+				"text": "Je viens de <b>catch</b> une info : Petrouchka Gregorovitch est enceinte, et doit rester <b>off</b> 3 mois. Mais j'ai besoin de son <b>teaching</b> pour les contrats russes, alors comment on fait ?",
 				"answers": [
 					{
 						"text": "Tout est organisé : une ligne de traîneau convoiera ses messages pour qu'elle puisse travailler de chez elle.",
 						"tensionLoss": 0,
-						"message": "Ça c'est du smart thinking comme je l'aime ! T'es vraiment mon boss préféré."
+						"message": "Ça c'est du <b>smart thinking</b> comme je l'aime ! T'es vraiment mon boss préféré."
 					},
 					{
 						"text": "Elle risque de démissionner si on refuse, ça désorganise nos plans, mais on doit lui donner ses 3 mois d'arrêt.",
 						"tensionLoss": -1,
-						"message": "Et du coup on let go les contrats russes ! Faut work tes priorités et bosser ton organisation là, ça va pas là !"
+						"message": "Et du coup on <b>let go</b> les contrats russes ! Faut <b>work</b> tes priorités et bosser ton organisation là, ça va pas là !"
 					},
 					{
 						"text": "Les contrats russes sont vitaux pour notre répartition de travail, j'ai donc exigé qu'elle revienne au bout d'un mois seulement.",
@@ -348,50 +348,50 @@
 		},
 		{
 			"penguin": "seller",
-			"penguinName": "Jean-Startup de la Volière",
+			"penguinName": "Eddy Sruptif",
 			"tensionType": "identité",
 			"question": {
-				"text": "Petrouchka s'est mise à organiser des breakfast chill & nogluten tout les lundis, tu vois ? C'est plutôt fun, mais chez PenguinCorp, on est plutôt boulot boulot d'habitude.",
+				"text": "Petrouchka s'est mise à organiser des <b>breakfast</b> chill & nogluten tout les lundis, tu vois ? C'est plutôt fun, mais chez PenguinCorp, on est plutôt boulot boulot d'habitude.",
 				"answers": [
 					{
 						"text": "Si les employés sont contents, organisons ces petit-déjeuners dans toute l'entreprise tous les premiers lundis du mois.",
 						"tensionLoss": 0,
-						"message": "Là tu me plais, là je believe dans ton leadership Marc ! Yeah, bring it on !"
+						"message": "Là tu me plais, là je <b>believe</b> dans ton <b>leadership</b> Marc ! <i>Yeah, bring it on</i> !"
 					},
 					{
 						"text": "Je ne vous paye pas à boire du café, désolé, mais effectivement ça n'est pas le genre de la maison.",
 						"tensionLoss": -1,
-						"message": "Holà, mollo coco, tu devrais open un peu plus ton mind si tu veux rester in, capisce ?"
+						"message": "Holà, mollo coco, tu devrais <b>open</b> un peu plus ton <b>mind</b> si tu veux rester in, capisce ?"
 					},
 					{
 						"text": "Faisons-en une tradition dans l'entreprise : petit-déjeuner deux fois par semaine !",
 						"tensionLoss": -1,
-						"message": "Là tu vas vraiment out of the line boss... Ici on est aussi fier de notre work, on va pas passer notre time à nous faire des snacks, compris chéri ?"
+						"message": "Là tu vas vraiment <b>out of the line</b> boss... Ici on est aussi fier de notre <b>work</b>, on va pas passer notre <b>time</b> à nous faire des snacks, compris chéri ?"
 					}
 				]
 			}
 		},
 		{
 			"penguin": "seller",
-			"penguinName": "Jean-Startup de la Volière",
+			"penguinName": "Eddy Sruptif",
 			"tensionType": "performance",
 			"question": {
-				"text": "Maintenant qu'on est <b>leader</b> sur le social-friendly, on pourrait utliser notre image de marque pour améliorer nos recettes. Un cash-in comme on dit, tu vois ?",
+				"text": "Maintenant qu'on est leader sur le <b>social-friendly</b>, on pourrait utliser notre image de marque pour améliorer nos recettes. Un <b>cash-in</b> comme on dit, tu vois ?",
 				"answers": [
 					{
 						"text": "Profitons de cette image pour augmenter nos bénéfices, mais de façon humaine, pour ne pas la dégrader.",
 						"tensionLoss": 0,
-						"message": "Ha ouais, genre smart thinking à donf', hein ? Oki doki, on fait comme tu le sens !"
+						"message": "Ha ouais, genre <b>smart thinking</b> à donf', hein ? Oki doki, on fait comme tu le sens !"
 					},
 					{
 						"text": "Notre but, c'est de générer le plus de profit. Comment utiliser cette image pour de meilleures performances ?",
 						"tensionLoss": -1,
-						"message": "Écoute, je respecte ta straight-forwardness OK ? Mais là, y'a des limites à la course à la performance, t'es trop far behind boss."
+						"message": "Écoute, je respecte ta <b>straight-forwardness</b> OK ? Mais là, y'a des limites à la course à la performance, t'es trop <b>far behind</b> boss."
 					},
 					{
 						"text": "Mieux vaut conserver les valeurs humaines que nous avons développé, sans chercher à les mettre à profit...",
 						"tensionLoss": -1,
-						"message": "Franchement, être aussi fleur bleue, c'est SO 2008 quoi. Je suis écoeuré, you see ?"
+						"message": "Franchement, être aussi fleur bleue, c'est SO 2008 quoi. Je suis écoeuré, <b>you see</b> ?"
 					}
 				]
 			}
