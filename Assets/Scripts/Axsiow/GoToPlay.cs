@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class GoToPlay : MonoBehaviour {
 
 
-    public void Back () {
-        SceneManager.LoadScene("SampleScene");
+    public void Back ()
+    {
+        GetComponent<AudioSource>().Play();
+        SceneManager.LoadSceneAsync("SampleScene");
     }
 
 }
