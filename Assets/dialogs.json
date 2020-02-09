@@ -46,7 +46,7 @@
 					{
 						"text" : "J'ai du dépasser le budget, mais nous avons embauché une personne en plus.",
 						"tensionLoss" : -1,
-						"message" : "Vous avez dépassé le budget provisionnel ! Nous risquons la banqu'route, arrêtez de prendre ce genre de décision inconsidérée !"
+						"message" : "Vous avez dépassé le budget !? Nous risquons la banqu'route, arrêtez de prendre c'type de décision inconsidérée !"
 					}
 				]
 			}
