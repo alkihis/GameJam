@@ -2914,9 +2914,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
   m_Text: "Des questions sont pos\xE9es par les employ\xE9s de Penguin Corp.\n<b>Choisis</b>
-    la r\xE9ponse qui g\xE9n\xE8re le moins de tensions.\nSi la tensions est trop
-    grande, ton usine fera faillite.\nSi les employ\xE9s sont satisfait des solutions
-    apport\xE9es, ton entreprise pourra props\xE9rer et la victoire sera tienne !"
+    la r\xE9ponse qui g\xE9n\xE8rera le moins de tensions.\nSi la tension est trop
+    grande, ton usine fera faillite.\nSi les employ\xE9s sont satisfaits des solutions
+    apport\xE9es, ton entreprise pourra prosp\xE9rer et la victoire sera tienne !"
 --- !u!222 &1681814301
 CanvasRenderer:
   m_ObjectHideFlags: 0
