@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3258737, g: 0.5866912, b: 0.7916446, a: 1}
+  m_IndirectSpecularColor: {r: 0.3258961, g: 0.5866953, b: 0.7916447, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14460,7 +14460,7 @@ PrefabInstance:
     - target: {fileID: 20703502011369625, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 89164982802757878, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
@@ -14565,32 +14565,32 @@ PrefabInstance:
     - target: {fileID: 1108927920943316425, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1837596706561513063, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1932310258798158081, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2470980825918708203, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2577421319456006653, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3186905870711203998, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3507560508036458230, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
@@ -14615,17 +14615,17 @@ PrefabInstance:
     - target: {fileID: 3811419613140009208, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4033835359412589416, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4338831028482653578, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4515782615732824370, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
@@ -14645,7 +14645,7 @@ PrefabInstance:
     - target: {fileID: 5405260381363642048, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325966783087138717, guid: ad49c9a1d2a7848c7bcb69a2a268232b,
         type: 3}
