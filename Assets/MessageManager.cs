@@ -127,6 +127,7 @@ public class MessageManager : MonoBehaviour
 
     private string GetRealJobName(string meta)
     {
+        Debug.Log(meta);
         switch (meta)
         {
             case "hunter":
@@ -138,7 +139,6 @@ public class MessageManager : MonoBehaviour
             default:
                 return "commercial";
         }
-        return "";
     }
 
     private void SetElementQuestion(Element e)
