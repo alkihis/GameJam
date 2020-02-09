@@ -37,6 +37,7 @@ public class MessageManager : MonoBehaviour
         SetElementQuestion(q1);
 
         ShowDialog();
+        PlayNormalSound();
     }
 
     void HideDialog()
@@ -188,6 +189,7 @@ public class MessageManager : MonoBehaviour
 
             usedQuestions.Add(start);
             SetElementQuestion(json.elements[start]);
+            PlayNormalSound();
         }
     }
 
