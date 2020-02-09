@@ -48,7 +48,7 @@ public class PenguinManager : MonoBehaviour
             case "manager":
                 current_penguin = penguins.coleBlanc;
                 break;
-            case "seller":
+            default:
                 current_penguin = penguins.seller;
                 break;
         }

@@ -10,4 +10,9 @@ public class DialogRestartTrigger : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void RestartScene()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }

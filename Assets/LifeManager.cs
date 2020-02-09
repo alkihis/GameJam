@@ -6,6 +6,7 @@ public class LifeManager : MonoBehaviour
 {
     static readonly int START_LIFE = 3;
     public EventManager eventManager;
+    public BordelManager bordelManager;
     public int life = START_LIFE;
 
     /// <summary>
@@ -18,10 +19,27 @@ public class LifeManager : MonoBehaviour
     {
         life--;
         eventManager.LifeLost();
+        RefreshBordelState();
 
         if (life <= 0)
         {
             Debug.Log("Partie terminée !");
+        }
+    }
+
+    private void RefreshBordelState()
+    {
+        if (life <= 1)
+        {
+            bordelManager.ShowState2();
+        }
+        else if (life == 2)
+        {
+            bordelManager.ShowState1();
+        }
+        else if (life >= 3)
+        {
+            bordelManager.Hide();
         }
     }
 
@@ -32,6 +50,7 @@ public class LifeManager : MonoBehaviour
     {
         life++;
         eventManager.LifeGained();
+        RefreshBordelState();
     }
 
     public void Restart()

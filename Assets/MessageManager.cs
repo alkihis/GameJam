@@ -15,6 +15,7 @@ public class MessageManager : MonoBehaviour
     public GameObject HappySoundContainer;
     public GameObject NormalSoundContainer;
     public GameObject AngrySoundContainer;
+    public Gyrophare gyrophare;
     public int NeededGoodAnswers = 10;
     
     [TextArea(3, 10)]
@@ -124,6 +125,22 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.messageText.fontSize = 22;
     }
 
+    private string GetRealJobName(string meta)
+    {
+        switch (meta)
+        {
+            case "hunter":
+                return "chasseur";
+            case "worker":
+                return "ouvrière";
+            case "manager":
+                return "manager";
+            default:
+                return "commercial";
+        }
+        return "";
+    }
+
     private void SetElementQuestion(Element e)
     {
         penguinManager.SelectPenguin(e.penguin);
@@ -133,7 +150,7 @@ public class MessageManager : MonoBehaviour
         SetActiveAnswers(true);
         messageBoxFax.buttonNext.gameObject.SetActive(false);
 
-        messageBoxFax.personnageName.text = e.penguinName;
+        messageBoxFax.personnageName.text = e.penguinName + ", " + GetRealJobName(e.penguin);
         messageBoxFax.messageText.text = e.question.text;
         messageBoxFax.messageText.alignment = TextAnchor.UpperLeft;
         messageBoxFax.messageText.fontSize = 18;
@@ -164,6 +181,7 @@ public class MessageManager : MonoBehaviour
     {
         // Select a random element
         var json = Dialog.dialog;
+        gyrophare.Hide();
 
         // Le joueur a perdu
         if (lifeManager.life == 0)
@@ -228,6 +246,7 @@ public class MessageManager : MonoBehaviour
             lifeManager.SalutMonPote();
             penguinManager.ModeFURAX();
             PlayAngrySound();
+            gyrophare.Show();
         }
         else
         {
@@ -265,13 +284,5 @@ public class MessageManager : MonoBehaviour
     private void PlayAngrySound()
     {
         PlayRandomSound(AngrySoundContainer);
-    }
-    
-    
-
-    public void RestartGame()
-    {
-        usedQuestions.Clear();
-        lifeManager.Restart();
     }
 }
