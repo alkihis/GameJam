@@ -6,26 +6,12 @@ using UnityEngine.UI;
 
 public class GoToCredits : MonoBehaviour{
 
-    // OK BOOMER
-    void Start () {
-        GetComponent<Button>().onClick.AddListener(Back);
-    }
+    public TitleScreenManager titleScreenManager;
 
-    private void Back () {
-        Canvas[] canvases = Resources.FindObjectsOfTypeAll<Canvas>();
-
-        GameObject creditsCanvas = canvases[1].gameObject;
-        Debug.Log (canvases[0].ToString ());
-        GameObject mainCanvas = canvases[2].gameObject;
-        Debug.Log (canvases[2].ToString ());
-        mainCanvas.SetActive(false);
-        creditsCanvas.SetActive(true);
-            
-
-        // GameObject mainCanvas = GameObject.Find("Canvas");
-        // GameObject creditsCanvas = GameObject.Find("CreditsCanvas");
-        // Debug.Log(creditsCanvas.ToString());
-        // mainCanvas.SetActive(false);
-        // creditsCanvas.SetActive(true);
+    public void Back()
+    {
+        titleScreenManager.mainMenu.gameObject.SetActive(false);
+        // titleScreenManager.commentJouer.gameObject.SetActive(false);
+        titleScreenManager.hideCredits.gameObject.SetActive(true);
     }
 }

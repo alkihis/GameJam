@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class MessageManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class MessageManager : MonoBehaviour
     private readonly HashSet<int> usedQuestions = new HashSet<int>();
     public PenguinManager penguinManager;
     public LifeManager lifeManager;
+    
+    public delegate void OnLose(string reason);
+    public event OnLose LooseEvent;
 
     private void Awake()
     {
@@ -18,7 +22,7 @@ public class MessageManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void BeginQuestions()
     {
         var json = Dialog.dialog;
         int start = Random.Range(0, json.elements.Length);
@@ -64,8 +68,20 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.answerFour.gameObject.SetActive(false);
     }
 
+    private void ShuffleAnswers(string[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            string temp = list[i];
+            int randomIndex = Random.Range(i, list.Length);
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
+        }
+    }
+
     private void SetAnswerText(string[] elements)
     {
+        ShuffleAnswers(elements);
         // Don't ask, it works
         if (elements.Length < 4)
         {
@@ -96,6 +112,8 @@ public class MessageManager : MonoBehaviour
         HideAnswers();
 
         messageBoxFax.messageText.text = s;
+        messageBoxFax.messageText.alignment = TextAnchor.MiddleCenter;
+        messageBoxFax.messageText.fontSize = 22;
     }
 
     private void SetElementQuestion(Element e)
@@ -108,9 +126,11 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.buttonNext.gameObject.SetActive(false);
 
         messageBoxFax.personnageName.text = e.penguinName;
-        messageBoxFax.messageText.text = e.question.text;   
+        messageBoxFax.messageText.text = e.question.text;
+        messageBoxFax.messageText.alignment = TextAnchor.UpperLeft;
+        messageBoxFax.messageText.fontSize = 18;
 
-         
+
         SetAnswerText(e.question.answers.Select(el => el.text).ToArray());
 
         currentElement = e;
@@ -126,10 +146,12 @@ public class MessageManager : MonoBehaviour
         messageBoxFax.personnageName.text = has_lost ?
             "Perdu :(" :
             "Bravo !";
+        messageBoxFax.messageText.alignment = TextAnchor.MiddleCenter;
         messageBoxFax.messageText.text = has_lost ?
             "Vous avez perdu toutes vos vies. Recommencer ?" :
             "Il ne reste plus aucune question. Vous avez réussi à garder toutes vos vies !";
     }
+    
 
 
     public void StartNextQuestion()
@@ -140,7 +162,9 @@ public class MessageManager : MonoBehaviour
         // Le joueur a perdu
         if (lifeManager.life == 0)
         {
-            SetElementRestart(true);
+            messageBoxFax.gameObject.SetActive(false);
+            penguinManager.Hide();
+            LooseEvent(currentElement.tensionType);
             return;
         }
 
@@ -214,6 +238,5 @@ public class MessageManager : MonoBehaviour
     {
         usedQuestions.Clear();
         lifeManager.Restart();
-        Start();
     }
 }
