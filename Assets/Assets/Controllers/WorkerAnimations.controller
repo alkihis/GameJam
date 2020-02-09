@@ -234,7 +234,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Succes
+  m_Name: Success
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -248,7 +248,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4190067464632262162, guid: 53007c3bf5c85534ba92deab5822dc59,
+  m_Motion: {fileID: -4694021964086422754, guid: 53007c3bf5c85534ba92deab5822dc59,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

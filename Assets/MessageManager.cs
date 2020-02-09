@@ -256,7 +256,7 @@ public class MessageManager : MonoBehaviour
             penguinManager.ModeFURAX();
             PlayAngrySound();
             gyrophare.Show();
-            gyrophare	.GetComponent	<AudioSource>().Play	();
+            gyrophare.GetComponent<AudioSource>().Play();
         }
         else
         {

@@ -15,6 +15,9 @@ ModelImporter:
   - first:
       74: 6360706184736016720
     second: Armature|WorkerTalking
+  - first:
+      74: -4694021964086422754
+    second: Armature|WorkerSuccessPUTAIN
   externalObjects: {}
   materials:
     materialImportMode: 1
