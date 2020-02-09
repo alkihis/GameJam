@@ -60,7 +60,7 @@ public class GamePlayManager : MonoBehaviour
                 objectName = "LearningTensions";
                 break;
             default:
-                objectName ="IdentityTensions";
+                objectName = "IdentityTensions";
                 break;
         }
 
