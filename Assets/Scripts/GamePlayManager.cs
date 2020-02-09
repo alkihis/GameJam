@@ -65,8 +65,10 @@ public class GamePlayManager : MonoBehaviour
         }
 
         var sprite = GameObject.Find(objectName);
+        Debug.Log(sprite);
         if (sprite != null)
         {
+            Debug.Log("Enabling");
             sprite.GetComponent<SpriteRenderer>().enabled = true;
         }
         
