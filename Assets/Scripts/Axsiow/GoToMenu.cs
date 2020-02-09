@@ -9,7 +9,7 @@ public class GoToMenu : MonoBehaviour {
 
     public void Back () {
         titleScreenManager.mainMenu.gameObject.SetActive(true);
-        // titleScreenManager.commentJouer.gameObject.SetActive(false);
+        titleScreenManager.commentJouer.gameObject.SetActive(false);
         titleScreenManager.hideCredits.gameObject.SetActive(false);
     }
 }

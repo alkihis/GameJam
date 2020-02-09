@@ -4,8 +4,4 @@ using UnityEngine;
 
 public class CommentJouer : MonoBehaviour
 {
-    public void Start()
-    {
-        
-    }
 }

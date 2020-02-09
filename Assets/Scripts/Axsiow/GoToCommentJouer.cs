@@ -7,10 +7,9 @@ using UnityEngine.UI;
 public class GoToCommentJouer : MonoBehaviour {
     public TitleScreenManager titleScreenManager;
 
-    public void Back () {
+    public void Back() {
         Debug.Log("Activate comment jouer");
+        titleScreenManager.commentJouer.gameObject.SetActive(true);
         titleScreenManager.mainMenu.gameObject.SetActive(false);
-        titleScreenManager.hideCredits.gameObject.SetActive(false);
-        //titleScreenManager.commentJouer.gameObject.SetActive(true);
     }
 }

@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class GoToPlay : MonoBehaviour {
 
 
-    private void Back () {
-        SceneManager.LoadScene ("SampleScene");
+    public void Back () {
+        SceneManager.LoadScene("SampleScene");
     }
 
 }
