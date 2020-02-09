@@ -39,7 +39,6 @@ public class GamePlayManager : MonoBehaviour
 
     public void StartCameraPan()
     {
-        Debug.Log("Pan camera");
         Camera.main.gameObject.GetComponent<Animator>().SetTrigger("PanTrigger");
         // Wait for it to finish ... ?
     }
@@ -70,13 +69,12 @@ public class GamePlayManager : MonoBehaviour
         }
 
         var sprite = GameObject.Find(objectName);
-        Debug.Log(sprite);
         if (sprite != null)
         {
-            Debug.Log("Enabling");
             sprite.GetComponent<SpriteRenderer>().enabled = true;
         }
         
+        NewsPaper.GetComponent<AudioSource>().Play();
         NewsPaper.GetComponent<Animator>().SetTrigger("FallTrigger");
 
         // TODO déclencher la bonne animation de newspaper
