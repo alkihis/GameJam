@@ -15,6 +15,10 @@ public class MessageManager : MonoBehaviour
     public GameObject HappySoundContainer;
     public GameObject NormalSoundContainer;
     public GameObject AngrySoundContainer;
+    public int NeededGoodAnswers = 10;
+    
+    [TextArea(3, 10)]
+    public string VictoryMessage = "Bravo";
     
     public delegate void OnLose(string reason);
     public event OnLose LooseEvent;
@@ -151,9 +155,7 @@ public class MessageManager : MonoBehaviour
             "Perdu :(" :
             "Bravo !";
         messageBoxFax.messageText.alignment = TextAnchor.MiddleCenter;
-        messageBoxFax.messageText.text = has_lost ?
-            "Vous avez perdu toutes vos vies. Recommencer ?" :
-            "Il ne reste plus aucune question. Vous avez réussi à garder toutes vos vies !";
+        messageBoxFax.messageText.text = has_lost ? "Vous avez perdu toutes vos vies. Recommencer ?" : VictoryMessage;
     }
     
 
@@ -172,7 +174,7 @@ public class MessageManager : MonoBehaviour
             return;
         }
 
-        if (usedQuestions.Count == json.elements.Length)
+        if (usedQuestions.Count >= NeededGoodAnswers)
         {
             // Questions are over !
             Debug.Log("No more questions available !");

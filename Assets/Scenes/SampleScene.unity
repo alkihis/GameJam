@@ -9725,6 +9725,10 @@ MonoBehaviour:
   HappySoundContainer: {fileID: 1739899306}
   NormalSoundContainer: {fileID: 249970111}
   AngrySoundContainer: {fileID: 1388797985}
+  NeededGoodAnswers: 12
+  VictoryMessage: "Bravo l'ami ! Tu as r\xE9ussi \xE0 garder une bonne ambiance dans
+    l'entreprise. Tes employ\xE9s t'en sont reconnaissant :)\nTu peux en apprendre
+    plus sur la reprise d'entreprise sur <a href=\"https://theses.fr/s220558\">https://theses.fr/s220558</a>"
 --- !u!4 &873003904
 Transform:
   m_ObjectHideFlags: 0
