@@ -47,6 +47,29 @@ public class GamePlayManager : MonoBehaviour
     void StartPaperFall(string reason)
     {
         // Also change musics
+        var objectName = "IdentityTensions";
+        switch (reason)
+        {
+            case "performance": 
+                objectName = "PerformanceTensions";
+                break;
+            case "organisation": 
+                objectName = "OrganisationTensions";
+                break;
+            case "apprentissage":
+                objectName = "LearningTensions";
+                break;
+            default:
+                objectName ="IdentityTensions";
+                break;
+        }
+
+        var sprite = GameObject.Find(objectName);
+        if (sprite != null)
+        {
+            sprite.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        
         NewsPaper.GetComponent<Animator>().SetTrigger("FallTrigger");
 
         // TODO déclencher la bonne animation de newspaper
