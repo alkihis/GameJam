@@ -1001,7 +1001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 280.3, y: -147.8}
+  m_AnchoredPosition: {x: 324, y: -155}
   m_SizeDelta: {x: 197.6, y: -433.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &359359127
@@ -1670,7 +1670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &587784124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2864,8 +2864,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.5, y: -66.5}
-  m_SizeDelta: {x: 382.9, y: 480.9}
+  m_AnchoredPosition: {x: -170.5, y: -21.1}
+  m_SizeDelta: {x: 619.1, y: 374.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681814299
 MonoBehaviour:
@@ -2902,18 +2902,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 385b0c38e6f13fb4daadbc047aab9a15, type: 3}
-    m_FontSize: 30
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: BEN A TON AVIS CONNARD
+    m_LineSpacing: 1.5
+  m_Text: "Des questions sont pos\xE9es par les employ\xE9s de Penguin Corp.\n<b>Choisis</b>
+    la r\xE9ponse qui g\xE9n\xE8re le moins de tensions.\nSi la tensions est trop
+    grande, ton usine fera faillite.\nSi les employ\xE9s sont satisfait des solutions
+    apport\xE9es, ton entreprise pourra props\xE9rer et la victoire sera tienne !"
 --- !u!222 &1681814301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3059,7 +3062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1918160923
 MonoBehaviour:
   m_ObjectHideFlags: 0
