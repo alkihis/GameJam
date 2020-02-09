@@ -16,7 +16,9 @@ public class MessageManager : MonoBehaviour
     public GameObject NormalSoundContainer;
     public GameObject AngrySoundContainer;
     public Gyrophare gyrophare;
+    public Calendrier calendrier;
     public int NeededGoodAnswers = 10;
+    private int currentMonth = 1;
     
     [TextArea(3, 10)]
     public string VictoryMessage = "Bravo";
@@ -200,6 +202,13 @@ public class MessageManager : MonoBehaviour
         }
         else
         {
+            currentMonth++;
+            if (currentMonth >= 2)
+            {
+                calendrier.ShowNumber(currentMonth);
+            }
+
+
             int start = Random.Range(0, json.elements.Length);
 
             while (usedQuestions.Contains(start))
