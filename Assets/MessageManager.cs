@@ -12,6 +12,9 @@ public class MessageManager : MonoBehaviour
     private readonly HashSet<int> usedQuestions = new HashSet<int>();
     public PenguinManager penguinManager;
     public LifeManager lifeManager;
+    public GameObject HappySoundContainer;
+    public GameObject NormalSoundContainer;
+    public GameObject AngrySoundContainer;
     
     public delegate void OnLose(string reason);
     public event OnLose LooseEvent;
@@ -34,6 +37,7 @@ public class MessageManager : MonoBehaviour
         SetElementQuestion(q1);
 
         ShowDialog();
+        PlayNormalSound();
     }
 
     void HideDialog()
@@ -185,6 +189,7 @@ public class MessageManager : MonoBehaviour
 
             usedQuestions.Add(start);
             SetElementQuestion(json.elements[start]);
+            PlayNormalSound();
         }
     }
 
@@ -220,9 +225,11 @@ public class MessageManager : MonoBehaviour
             Debug.Log("Dimuntion");
             lifeManager.SalutMonPote();
             penguinManager.ModeFURAX();
+            PlayAngrySound();
         }
         else
         {
+            PlayHappySound();
             penguinManager.ModeRELAX();
         }
 
@@ -233,6 +240,32 @@ public class MessageManager : MonoBehaviour
 
         SetElementNext(answer.message);
     }
+
+    private void PlayRandomSound(GameObject origin)
+    {
+        var components = origin.GetComponents<AudioSource>();
+        if (components.Length > 0)  {
+             var index = Random.Range(0, components.Length);
+             components[index].Play();   
+        }
+    }
+
+    private void PlayNormalSound()
+    {
+        PlayRandomSound(NormalSoundContainer);
+    }
+    
+    private void PlayHappySound()
+    {
+        PlayRandomSound(HappySoundContainer);
+    }
+
+    private void PlayAngrySound()
+    {
+        PlayRandomSound(AngrySoundContainer);
+    }
+    
+    
 
     public void RestartGame()
     {
