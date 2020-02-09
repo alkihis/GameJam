@@ -64,6 +64,11 @@ public class GamePlayManager : MonoBehaviour
                 break;
         }
 
+        if (Random.Range(0, 5) == 0)
+        {
+            objectName = "RandomHeadline";
+        }
+
         var sprite = GameObject.Find(objectName);
         Debug.Log(sprite);
         if (sprite != null)
