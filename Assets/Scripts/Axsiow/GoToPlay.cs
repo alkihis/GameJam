@@ -10,7 +10,7 @@ public class GoToPlay : MonoBehaviour {
     public void Back ()
     {
         GetComponent<AudioSource>().Play();
-        SceneManager.LoadSceneAsync("SampleScene");
+        SceneManager.LoadScene("SampleScene");
     }
 
 }
